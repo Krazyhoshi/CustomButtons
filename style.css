@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+
+    background: linear-gradient(
+        90deg,
+        #e0f7fa,
+        #e8eaf6,
+        #fce4ec
+    );
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.background {
+    width: auto;
+    height: auto;
+
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.75),
+        rgba(225, 245, 254, 0.85),
+        rgba(243, 229, 245, 0.8)
+    );
+
+    padding: 20px;
+    border-radius: 20px;
+
+    display: grid  ;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: navy;
+}
+
+.description {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: navy;
+
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-family: monospace;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 50px);
+    gap: 20px;
+    justify-content: center;
+}
+
+.FB, .TT, .IG, .YT {
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    color: white;
+
+    transition: transform 0.4s ease;
+}
+
+.FB:hover, .TT:hover, .IG:hover, .YT:hover {
+    transform: translateY(-5px) scale(1.2);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.FB {
+    background-color: #3b5998;
+}
+
+.TT {
+    background-color: black ;
+}
+
+.IG {
+    background: linear-gradient(
+        45deg,
+        rgba(240, 148, 51, 1),
+        rgba(230, 104, 60, 1),
+        rgba(220, 39, 67, 1),
+        rgba(204, 35, 102, 1),
+        rgba(188, 24, 136, 1)
+    );
+}
+
+
+.YT {
+    background-color: #ff0000;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.4em;
+    color: palevioletred;
+    font-family: monospace;
+}
+
+.rizz-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 8px auto 20px;
+}
